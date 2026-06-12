@@ -1,0 +1,860 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Money Heist | La Casa de Papel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="ring"></div>
+    <p>BELLA CIAO</p>
+  </div>
+
+  <!-- THREE BG -->
+  <div id="three-bg"></div>
+  <!-- PARTICLES -->
+  <div id="particles-bg"></div>
+
+  <!-- FLOATING OBJECTS -->
+  <div class="float-obj" id="dali-mask-float">
+    <svg viewBox="0 0 100 110" width="100" height="110">
+      <ellipse cx="50" cy="26" rx="24" ry="13" fill="#cc0000" />
+      <ellipse cx="50" cy="42" rx="30" ry="16" fill="#cc0000" />
+      <rect x="14" y="42" width="72" height="42" rx="3" fill="#cc0000" />
+      <circle cx="24" cy="22" r="4" fill="#000" />
+      <circle cx="76" cy="22" r="4" fill="#000" />
+      <path d="M32 76 Q50 92 68 76" stroke="#000" fill="none" stroke-width="2" />
+    </svg>
+  </div>
+  <div class="float-obj" id="gold-bar-float">
+    <div></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="logo"><img src="https://image.tmdb.org/t/p/original/rYE1Jv1dzoCyjf0oES7L12gwH3D.png" alt="Money Heist">
+    </div>
+    <ul id="nl">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">Story</a></li>
+      <li><a href="#imgseq">Scenes</a></li>
+      <li><a href="#characters">Crew</a></li>
+      <li><a href="#seasons">Seasons</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#videos">Trailers</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#quotes">Quotes</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="ham" onclick="tm()"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="ov"></div>
+    <div class="hc">
+      <h1>MONEY HEIST</h1>
+      <h2>LA CASA DE PAPEL</h2>
+      <p>The world's greatest heist. A story of resistance, sacrifice, and genius.</p>
+      <div class="btns"><a href="#videos" class="btn">Watch Trailer</a><a href="#characters" class="btn-o">Explore
+          Crew</a></div>
+    </div>
+    <div class="si"><span>SCROLL</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- IMAGE SEQUENCE -->
+  <section id="imgseq" class="dark">
+    <div class="sh">
+      <h3>Cinematic Journey</h3>
+      <p>AUTO-PLAYING SCENES</p>
+    </div>
+    <div class="img-seq" id="imgSeq">
+      <div class="seq-ov"></div>
+      <div class="seq-text">
+        <h3 id="seqTitle">The Crew</h3>
+        <p id="seqSub">Auto-playing...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="light">
+    <div class="sh">
+      <h3>The Master Plan</h3>
+      <p>THE BIGGEST HEIST IN HISTORY</p>
+    </div>
+    <div class="about-grid">
+      <div class="ab" style="background-image:url('https://image.tmdb.org/t/p/w500/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg')">
+        <h4>The Professor</h4>
+        <p>The genius strategist who spent years planning every second. Five months training his crew. Every contingency
+          mapped, every move predicted.</p>
+      </div>
+      <div class="ab" style="background-image:url('https://image.tmdb.org/t/p/w780/gFRHLjysseRgbZmMUS3e2oNdFQK.jpg')">
+        <h4>Royal Mint</h4>
+        <p>A fortress in the heart of Spain. Eleven days inside printing 2.4 billion euros while the world watches in
+          disbelief.</p>
+      </div>
+      <div class="ab" style="background-image:url('https://image.tmdb.org/t/p/w780/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg')">
+        <h4>The Uniform</h4>
+        <p>Red jumpsuits and Salvador Dali masks. They're not thieves â€” they're revolutionaries. The symbol that sparked
+          a global movement.</p>
+      </div>
+      <div class="ab" style="background-image:url('https://image.tmdb.org/t/p/w780/piuRhGiQBYWgW668eSNJ2ug5uAO.jpg')">
+        <h4>Bella Ciao</h4>
+        <p>The Italian resistance anthem that became the heartbeat of the heist. Sung through the halls â€” piercing
+          through walls of oppression.</p>
+      </div>
+      <div class="ab" style="background-image:url('https://image.tmdb.org/t/p/w780/tNlkKrypFs6QSUjFVQntFISoFv5.jpg')">
+        <h4>Resistance</h4>
+        <p>What starts as a robbery becomes a worldwide symbol. Red suits flood the streets. The heist becomes a
+          movement.</p>
+      </div>
+      <div class="ab" style="background-image:url('https://image.tmdb.org/t/p/w780/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg')">
+        <h4>2.4 Billion Euros</h4>
+        <p>The largest heist in history. Not stealing from the system â€” creating from within it. Money that never
+          existed until Nairobi's presses ran.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARACTERS -->
+  <section id="characters" class="dark">
+    <div class="sh">
+      <h3>The Crew</h3>
+      <p>TWELVE PEOPLE, ONE MISSION</p>
+    </div>
+    <div class="cg">
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg')"></div>
+            <div class="label">
+              <h4>Professor</h4><span>Sergio | Mastermind</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Professor</h4>
+            <div class="act">Alvaro Morte</div>
+            <p>Genius strategist who planned every second. Always five steps ahead. No violence, just brilliance.</p>
+            <em>"Resistance is not about strength. It's about intelligence."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/cmH8Z459tw9YkR61QfxlCSlZw9P.jpg')"></div>
+            <div class="label">
+              <h4>Tokyo</h4><span>Silene | Narrator</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Tokyo</h4>
+            <div class="act">Ursula Corbero</div>
+            <p>Impulsive, fearless, the beating heart. Tells the story her way â€” raw, unfiltered, unforgettable.</p>
+            <em>"Many people believe we only find love once."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/38HeVKeOBztVYrLJOWzAtEZiB02.jpg')"></div>
+            <div class="label">
+              <h4>Berlin</h4><span>Andres | Leader</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Berlin</h4>
+            <div class="act">Pedro Alonso</div>
+            <p>Elegant, commanding, ruthless. Controls every hostage with theatrical precision. The show's icon.</p>
+            <em>"Nothing is certain except death, taxes â€” and the plan."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/vWUZkQKxj63qTNBa8DvEd0CpU64.jpg')"></div>
+            <div class="label">
+              <h4>Nairobi</h4><span>Agata | Printer</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Nairobi</h4>
+            <div class="act">Alba Flores</div>
+            <p>Expert printer running the operation. Engine printing billions â€” fierce mother holding the crew together.
+            </p><em>"The matriarchy begins! La puta ama!"</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/eFNlbsaMODCHys35ZQOkMQNh0Jq.jpg')"></div>
+            <div class="label">
+              <h4>Rio</h4><span>Anibal | Tech</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Rio</h4>
+            <div class="act">Miguel Herran</div>
+            <p>The youngest. Computer prodigy. Handles every system â€” making the Mint vanish from the grid.</p><em>"I'm
+              not a kid anymore. I've been to war."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/nLaxzU92z14FIbe25sE8jDMIThZ.jpg')"></div>
+            <div class="label">
+              <h4>Denver</h4><span>Daniel | Muscle</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Denver</h4>
+            <div class="act">Jaime Lorente</div>
+            <p>Muscle with an unforgettable laugh. Moscow taught him loyalty and when to crack a vault with a smile.</p>
+            <em>"My father always said you have to laugh at life."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/uDGKTKKv9v2JRutCZJjKwpJVKOs.jpg')"></div>
+            <div class="label">
+              <h4>Moscow</h4><span>Agustin | Veteran</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Moscow</h4>
+            <div class="act">Paco Tous</div>
+            <p>Seasoned veteran. Came back for one last heist to give Denver the life he never had.</p><em>"A father's
+              love is the most powerful force on earth."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/u3WigKj7tUriLC9Z5XbHuTNk4Wx.jpg')"></div>
+            <div class="label">
+              <h4>Helsinki</h4><span>Mirko | Enforcer</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Helsinki</h4>
+            <div class="act">Darko Peric</div>
+            <p>Gentle giant until duty calls. The unbreakable wall protecting the crew from every outside threat.</p>
+            <em>"Family is the only thing that matters."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/d7N6RWdMQmTI7wL44Ys4uvuSIoQ.jpg')"></div>
+            <div class="label">
+              <h4>Stockholm</h4><span>Monica | Hostage</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Stockholm</h4>
+            <div class="act">Esther Acebo</div>
+            <p>Hostage who became family. Walked in as secretary, walked out a revolutionary.</p><em>"I'm not the same
+              person who walked in here."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/l7XfYka8XxPj0fYjq22lvyxkJ7S.jpg')"></div>
+            <div class="label">
+              <h4>Lisbon</h4><span>Raquel | Negotiator</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Lisbon</h4>
+            <div class="act">Itziar Ituno</div>
+            <p>Inspector who was supposed to catch them â€” became one of them. The Professor's greatest victory.</p>
+            <em>"I've spent my whole life following rules."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/hArSCSwj92ItqVMni7D8ehInnU5.jpg')"></div>
+            <div class="label">
+              <h4>Palermo</h4><span>Martin | Strategist</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Palermo</h4>
+            <div class="act">Rodrigo de la Serna</div>
+            <p>Brilliant engineer. Explosive personality. Co-planned the Bank of Spain heist with Berlin.</p><em>"I'm a
+              genius. And geniuses are always misunderstood."</em>
+          </div>
+        </div>
+      </div>
+      <div class="ch" onclick="this.classList.toggle('flipped')">
+        <div class="inner">
+          <div class="front">
+            <div class="pic"
+              style="background-image:url('https://image.tmdb.org/t/p/w500/1lACQepfukuZ0l6FnUpMO03WxcJ.jpg')"></div>
+            <div class="label">
+              <h4>Arturo</h4><span>Arturo | Hostage</span>
+            </div>
+          </div>
+          <div class="back">
+            <h4>Arturo</h4>
+            <div class="act">Enrique Arce</div>
+            <p>Former Mint director who refuses to stay a hostage. The most despised character in the series.</p>
+            <em>"I'm not a hero. I'm just not a coward."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASONS -->
+  <section id="seasons" class="light">
+    <div class="sh">
+      <h3>Seasons</h3>
+      <p>THE COMPLETE SAGA</p>
+    </div>
+    <div class="sg2">
+      <div class="sn">
+        <div class="sp"><img src="https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg" loading="lazy"><span
+            class="badge">PART 1</span></div>
+        <div class="data">
+          <h4>Season 1</h4>
+          <div class="info">13 Ep | 2017 | 8.2/10</div>
+          <p>The Professor recruits eight robbers. Target: Royal Mint of Spain.</p>
+        </div>
+      </div>
+      <div class="sn">
+        <div class="sp"><img src="https://image.tmdb.org/t/p/w500/x9YQ28gwAkAXCSw7n1cAsPbJaTF.jpg" loading="lazy"><span
+            class="badge">PART 2</span></div>
+        <div class="data">
+          <h4>Season 2</h4>
+          <div class="info">9 Ep | 2018 | 8.4/10</div>
+          <p>Climax inside the Mint. Police close in. A breathtaking escape unfolds.</p>
+        </div>
+      </div>
+      <div class="sn">
+        <div class="sp"><img src="https://image.tmdb.org/t/p/w500/s5QiIPNzND9pruA4tOAnB4cM06k.jpg" loading="lazy"><span
+            class="badge">PART 3</span></div>
+        <div class="data">
+          <h4>Season 3</h4>
+          <div class="info">8 Ep | 2019 | 8.0/10</div>
+          <p>Crew reunites to rescue Rio â€” launching the Bank of Spain heist.</p>
+        </div>
+      </div>
+      <div class="sn">
+        <div class="sp"><img src="https://image.tmdb.org/t/p/w500/4lYoeY8Ukux2EIL18izTeoW8m6P.jpg" loading="lazy"><span
+            class="badge">PART 4</span></div>
+        <div class="data">
+          <h4>Season 4</h4>
+          <div class="info">8 Ep | 2020 | 7.9/10</div>
+          <p>Chaos in the Bank. Nairobi fights for life. The Professor's most dangerous enemy.</p>
+        </div>
+      </div>
+      <div class="sn">
+        <div class="sp"><img src="https://image.tmdb.org/t/p/w500/zd8mxIfGY8SlupYd9XvK3qJL91B.jpg" loading="lazy"><span
+            class="badge">PART 5</span></div>
+        <div class="data">
+          <h4>Season 5</h4>
+          <div class="info">10 Ep | 2021 | 8.1/10</div>
+          <p>Final chapter. Army storms the bank. Tokyo's sacrifice. The crew fights for everything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="dark">
+    <div class="sh">
+      <h3>The Heist</h3>
+      <p>ELEVEN DAYS THAT SHOOK THE WORLD</p>
+    </div>
+    <div class="tw">
+      <div class="tl">
+        <div class="tc2"><span class="d2">MONTHS BEFORE</span>
+          <h4>Recruitment</h4>
+          <p>The Professor selects eight criminals with nothing to lose. Five months of training in isolation. Every
+            detail memorized to perfection.</p><img
+            src="https://image.tmdb.org/t/p/w300/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg">
+        </div>
+        <div class="dot"></div>
+        <div class="ts2"></div>
+      </div>
+      <div class="tl">
+        <div class="ts2"></div>
+        <div class="dot"></div>
+        <div class="tc2"><span class="d2">DAY 0</span>
+          <h4>Infiltration</h4>
+          <p>67 hostages. Red suits. Dali masks. The Royal Mint falls. The world watches as the Professor's grand design
+            unfolds.</p><img src="https://image.tmdb.org/t/p/w300/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg">
+        </div>
+      </div>
+      <div class="tl">
+        <div class="tc2"><span class="d2">DAY 4-6</span>
+          <h4>Printing Begins</h4>
+          <p>Nairobi fires up the presses. Crisp euro bills pour out â€” untraceable, perfect. Every delay is part of the
+            design.</p><img src="https://image.tmdb.org/t/p/w300/gFRHLjysseRgbZmMUS3e2oNdFQK.jpg">
+        </div>
+        <div class="dot"></div>
+        <div class="ts2"></div>
+      </div>
+      <div class="tl">
+        <div class="ts2"></div>
+        <div class="dot"></div>
+        <div class="tc2"><span class="d2">DAY 10-11</span>
+          <h4>The Escape</h4>
+          <p>2.4 billion euros printed. Secret tunnel completed. The crew vanishes â€” leaving behind nothing but red
+            suits and a legend.</p><img src="https://image.tmdb.org/t/p/w300/jfl5bCKQSI6oU00NAbJ3kaySDti.jpg">
+        </div>
+      </div>
+      <div class="tl">
+        <div class="tc2"><span class="d2">PART 3-5</span>
+          <h4>Bank of Spain</h4>
+          <p>90 tonnes of gold beneath Madrid. A plan more ambitious than the first against the army and the entire
+            Spanish state.</p><img src="https://image.tmdb.org/t/p/w300/piuRhGiQBYWgW668eSNJ2ug5uAO.jpg">
+        </div>
+        <div class="dot"></div>
+        <div class="ts2"></div>
+      </div>
+      <div class="tl">
+        <div class="ts2"></div>
+        <div class="dot"></div>
+        <div class="tc2"><span class="d2">FINAL</span>
+          <h4>Victory</h4>
+          <p>Against all odds â€” freedom, legacy. Bella Ciao echoes across Madrid. The gold. The escape. The family.</p>
+          <img src="https://image.tmdb.org/t/p/w300/vUeM9CrnuNEFEop1JoxslSJDRGt.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="light">
+    <div class="sh">
+      <h3>Gallery</h3>
+      <p>CINEMATIC MOMENTS</p>
+    </div>
+    <div class="gx">
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg" loading="lazy">
+        <div class="cap">THE FULL CREW</div>
+      </div>
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/piuRhGiQBYWgW668eSNJ2ug5uAO.jpg" loading="lazy">
+        <div class="cap">RESISTANCE UNIFORM</div>
+      </div>
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/tNlkKrypFs6QSUjFVQntFISoFv5.jpg" loading="lazy">
+        <div class="cap">THE PROFESSOR</div>
+      </div>
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/gFRHLjysseRgbZmMUS3e2oNdFQK.jpg" loading="lazy">
+        <div class="cap">INSIDE THE MINT</div>
+      </div>
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg" loading="lazy">
+        <div class="cap">RED REVOLUTION</div>
+      </div>
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/jfl5bCKQSI6oU00NAbJ3kaySDti.jpg" loading="lazy">
+        <div class="cap">THE OPERATION</div>
+      </div>
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/vUeM9CrnuNEFEop1JoxslSJDRGt.jpg" loading="lazy">
+        <div class="cap">TOGETHER</div>
+      </div>
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/lcStZT1Gle2ZE5sN6I3ewcFaBY4.jpg" loading="lazy">
+        <div class="cap">THE DRAMA</div>
+      </div>
+      <div class="gi2"><img src="https://image.tmdb.org/t/p/w780/uneEmfKFbyOZsN77JAHXK1cIAmX.jpg" loading="lazy">
+        <div class="cap">VICTORY</div>
+      </div>
+    </div>
+  </section>
+  <div class="lb" id="lb"><span class="lbx">&times;</span><img id="lbi" src="" alt=""></div>
+
+  <!-- VIDEOS -->
+  <section id="videos" class="dark">
+    <div class="sh">
+      <h3>Official Trailers</h3>
+      <p>WATCH THE HEIST</p>
+    </div>
+    <div class="vg2">
+      <div class="vc2">
+        <div class="vw2"
+          onclick="if(!this.querySelector('iframe')){this.innerHTML='<iframe src=\'https://www.youtube.com/embed/_InqQJRqGW4?autoplay=1\' allowfullscreen allow=\'autoplay;encrypted-media\'></iframe>'}">
+          <div class="yt-thumb"
+            style="background-image:url('https://img.youtube.com/vi/_InqQJRqGW4/maxresdefault.jpg')"></div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="vinfo">
+          <h4>Official Series Trailer</h4>
+          <p>Complete Money Heist experience â€” from the Royal Mint to the Bank of Spain.</p>
+        </div>
+      </div>
+      <div class="vc2">
+        <div class="vw2"
+          onclick="if(!this.querySelector('iframe')){this.innerHTML='<iframe src=\'https://www.youtube.com/embed/p_PJ0r1eDAQ?autoplay=1\' allowfullscreen allow=\'autoplay;encrypted-media\'></iframe>'}">
+          <div class="yt-thumb"
+            style="background-image:url('https://image.tmdb.org/t/p/w1280/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg')"></div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="vinfo">
+          <h4>Season 5 â€” Final Trailer</h4>
+          <p>The explosive conclusion. The crew faces their deadliest challenge.</p>
+        </div>
+      </div>
+      <div class="vc2">
+        <div class="vw2"
+          onclick="if(!this.querySelector('iframe')){this.innerHTML='<iframe src=\'https://www.youtube.com/embed/fvCdLmxnkj0?autoplay=1\' allowfullscreen allow=\'autoplay;encrypted-media\'></iframe>'}">
+          <div class="yt-thumb" style="background-image:url('https://img.youtube.com/vi/fvCdLmxnkj0/0.jpg')"></div>
+          <div class="play-btn"></div>
+        </div>
+        <div class="vinfo">
+          <h4>Part 1 Official Trailer</h4>
+          <p>Where it all began. The Professor's plan. The world's greatest heist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="light">
+    <div class="sh">
+      <h3>Numbers Don't Lie</h3>
+      <p>THE GLOBAL PHENOMENON</p>
+    </div>
+    <div class="stg">
+      <div class="stb">
+        <div class="n" data-t="5">0</div>
+        <div class="lbl">Seasons</div>
+        <div class="sub">Complete Saga</div>
+      </div>
+      <div class="stb">
+        <div class="n" data-t="48">0</div>
+        <div class="lbl">Episodes</div>
+        <div class="sub">Total Runtime</div>
+      </div>
+      <div class="stb">
+        <div class="n" data-t="8.2">0</div>
+        <div class="lbl">IMDb Rating</div>
+        <div class="sub">Average Score</div>
+      </div>
+      <div class="stb">
+        <div class="n" data-t="16">0</div>
+        <div class="lbl">Awards</div>
+        <div class="sub">International</div>
+      </div>
+      <div class="stb">
+        <div class="n" data-t="190">0</div>
+        <div class="lbl">Countries</div>
+        <div class="sub">Worldwide Reach</div>
+      </div>
+      <div class="stb">
+        <div class="n" data-t="65">0</div>
+        <div class="lbl">M Viewers</div>
+        <div class="sub">Netflix Global</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTES -->
+  <section id="quotes" class="dark">
+    <div class="sh">
+      <h3>Famous Quotes</h3>
+      <p>WORDS THAT DEFINED A MOVEMENT</p>
+    </div>
+    <div class="qg2">
+      <div class="qcard"
+        style="background-image:url('https://image.tmdb.org/t/p/w500/38HeVKeOBztVYrLJOWzAtEZiB02.jpg')"><span
+          class="mark">"</span>
+        <p class="qtxt">In this world, nothing is certain except death, taxes â€” and the Professor's plan.</p><span
+          class="qauth">â€” Berlin</span>
+      </div>
+      <div class="qcard"
+        style="background-image:url('https://image.tmdb.org/t/p/w500/2TGPhdpRC5wjdFEJqnLYiN5kbwg.jpg')"><span
+          class="mark">"</span>
+        <p class="qtxt">Hope. That's the only thing people really need to keep going. You just need a little hope.</p>
+        <span class="qauth">â€” The Professor</span>
+      </div>
+      <div class="qcard"
+        style="background-image:url('https://image.tmdb.org/t/p/w500/cmH8Z459tw9YkR61QfxlCSlZw9P.jpg')"><span
+          class="mark">"</span>
+        <p class="qtxt">Many people believe that we only find love once in a lifetime. I don't believe that.</p><span
+          class="qauth">â€” Tokyo</span>
+      </div>
+      <div class="qcard"
+        style="background-image:url('https://image.tmdb.org/t/p/w500/vWUZkQKxj63qTNBa8DvEd0CpU64.jpg')"><span
+          class="mark">"</span>
+        <p class="qtxt">The matriarchy begins! Today we start printing our own money. La puta ama!</p><span
+          class="qauth">â€” Nairobi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="light">
+    <div class="sh">
+      <h3>What The World Says</h3>
+      <p>AUDIENCE AND CRITICS</p>
+    </div>
+    <div class="sw" id="swCont">
+      <div class="swiper-wrapper" id="swW">
+        <div class="slide">
+          <div class="tcard">
+            <div class="av">JD</div>
+            <div class="str">â˜…â˜…â˜…â˜…â˜…</div>
+            <p>"One of the greatest shows ever created. Every episode leaves you breathless. Pure perfection."</p>
+            <div class="auth">â€” IMDb Top Review</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="tcard">
+            <div class="av">AR</div>
+            <div class="str">â˜…â˜…â˜…â˜…â˜…</div>
+            <p>"A masterpiece of storytelling. The Professor is one of television's most brilliantly written
+              characters."</p>
+            <div class="auth">â€” Rotten Tomatoes</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="tcard">
+            <div class="av">MK</div>
+            <div class="str">â˜…â˜…â˜…â˜…â˜…</div>
+            <p>"Never been so invested in a group of criminals. Makes you question everything about the system."</p>
+            <div class="auth">â€” Netflix Fan</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="tcard">
+            <div class="av">EW</div>
+            <div class="str">â˜…â˜…â˜…â˜…â˜…</div>
+            <p>"Bank of Spain episodes are the most intense television I have ever watched. Edge-of-seat brilliance."
+            </p>
+            <div class="auth">â€” Entertainment Weekly</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="tcard">
+            <div class="av">TG</div>
+            <div class="str">â˜…â˜…â˜…â˜…Â½</div>
+            <p>"No show combines heist action, emotional depth and pure entertainment like Money Heist."</p>
+            <div class="auth">â€” The Guardian</div>
+          </div>
+        </div>
+      </div>
+      <div class="sw-btns"><button id="pb">&larr;</button><button id="nb">&rarr;</button></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="dark">
+    <div class="sh">
+      <h3>FAQ</h3>
+      <p>EVERYTHING YOU NEED TO KNOW</p>
+    </div>
+    <div class="fw">
+      <div class="fi2">
+        <div class="q2" onclick="this.parentElement.classList.toggle('open')">What is Money Heist?<span
+            class="ic">+</span></div>
+        <div class="a2">Money Heist (La Casa de Papel) is a Spanish heist drama created by Alex Pina. It follows two
+          long-prepared heists led by the Professor â€” the Royal Mint of Spain and the Bank of Spain â€” told from Tokyo's
+          perspective.</div>
+      </div>
+      <div class="fi2">
+        <div class="q2" onclick="this.parentElement.classList.toggle('open')">How many seasons are there?<span
+            class="ic">+</span></div>
+        <div class="a2">Five seasons (Parts 1-5) totaling 48 episodes. Parts 1-2 cover the Royal Mint heist. Parts 3-5
+          cover the Bank of Spain heist.</div>
+      </div>
+      <div class="fi2">
+        <div class="q2" onclick="this.parentElement.classList.toggle('open')">Who is the Professor?<span
+            class="ic">+</span></div>
+        <div class="a2">Sergio Marquina â€” a genius strategist who spent his life preparing the perfect heist. He
+          recruits eight criminals with nothing to lose and orchestrates everything from outside.</div>
+      </div>
+      <div class="fi2">
+        <div class="q2" onclick="this.parentElement.classList.toggle('open')">Is Berlin alive?<span class="ic">+</span>
+        </div>
+        <div class="a2">Berlin sacrifices himself at the end of Part 2. He returns in flashbacks throughout Parts 3-5,
+          and a spin-off series Berlin (2023) explores his past life.</div>
+      </div>
+      <div class="fi2">
+        <div class="q2" onclick="this.parentElement.classList.toggle('open')">Which heist came first?<span
+            class="ic">+</span></div>
+        <div class="a2">Royal Mint (Parts 1-2) â€” printing 2.4 billion euros. Three years later, Bank of Spain (Parts
+          3-5) â€” 90 tonnes of gold. Each more ambitious than the last.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="light">
+    <div class="sh">
+      <h3>Join The Resistance</h3>
+      <p>SEND A MESSAGE</p>
+    </div>
+    <form class="cfw" id="cf2">
+      <div class="row2"><input type="text" name="name" placeholder="Your Name" required><input type="email" name="email"
+          placeholder="Your Email" required></div><textarea name="message" placeholder="Your Message"
+        required></textarea><button type="submit">Send Message</button>
+      <div class="msg2" id="msg2"></div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="https://image.tmdb.org/t/p/original/rYE1Jv1dzoCyjf0oES7L12gwH3D.png" alt="Money Heist" class="flogo">
+    <div class="flnks"><a href="#hero">Home</a><a href="#about">Story</a><a href="#imgseq">Scenes</a><a
+        href="#characters">Crew</a><a href="#seasons">Seasons</a><a href="#timeline">Timeline</a><a
+        href="#gallery">Gallery</a><a href="#videos">Trailers</a><a href="#stats">Stats</a><a
+        href="#quotes">Quotes</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+    <div class="soci"><a href="#">&#9654;</a><a href="#">&#9733;</a><a href="#">&#9655;</a><a href="#">&#9834;</a></div>
+    <p class="cpr">2024 La Casa de Papel â€” Fan Tribute. Non-commercial website.</p>
+  </footer>
+
+  <div id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</div>
+
+  <!-- SCRIPTS (EXTERNAL) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PRELOADER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    window.addEventListener('load', function () { setTimeout(function () { document.getElementById('preloader').classList.add('done') }, 600) });
+
+    // HERO VIDEO FALLBACK
+    (function () { var v = document.getElementById('heroVid'); if (!v) return; v.addEventListener('error', function () { v.style.display = 'none'; var d = v.parentElement, f = document.createElement('iframe'); f.src = 'https://www.youtube.com/embed/_InqQJRqGW4?autoplay=1&mute=1&loop=1&playlist=_InqQJRqGW4&controls=0&showinfo=0&modestbranding=1&rel=0'; f.style = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100vw;height:56.25vw;min-height:100vh;min-width:177.77vh;border:0'; f.allow = 'autoplay;encrypted-media'; f.allowFullscreen = true; d.appendChild(f) }); setTimeout(function () { if (v.paused || v.ended || v.readyState === 0) v.dispatchEvent(new Event('error')) }, 3000) })();
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• LENIS + SCROLLTRIGGER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    gsap.registerPlugin(ScrollTrigger);
+    var lenis = new Lenis({ duration: 1.3, easing: function (t) { return 1 - Math.pow(1 - t, 3) }, smooth: true, smoothTouch: false });
+    function raf(t) { lenis.raf(t); requestAnimationFrame(raf) } requestAnimationFrame(raf);
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(function (t) { lenis.raf(t * 1000) });
+    gsap.ticker.lagSmoothing(0);
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NAV â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    var nav = document.getElementById('nav'), tt = document.getElementById('toTop');
+    ScrollTrigger.create({ trigger: document.body, start: 'top+=50 top', onEnter: function () { nav.classList.add('scrolled') }, onLeaveBack: function () { nav.classList.remove('scrolled') } });
+    ScrollTrigger.create({ trigger: document.body, start: 'top+=600 top', onEnter: function () { tt.classList.add('visible') }, onLeaveBack: function () { tt.classList.remove('visible') } });
+    function tm() { document.getElementById('nl').classList.toggle('open') }
+    function cm() { document.getElementById('nl').classList.remove('open') }
+    document.querySelectorAll('#nl a').forEach(function (a) { a.addEventListener('click', function () { cm(); var t = document.querySelector(a.getAttribute('href')); if (t) { lenis.scrollTo(t, { offset: -70 }) } }) });
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) { if (a.closest('#nl')) return; a.addEventListener('click', function (e) { e.preventDefault(); var t = document.querySelector(this.getAttribute('href')); if (t) lenis.scrollTo(t, { offset: -70 }) }) });
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• THREE.JS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    (function () {
+      var scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, .1, 100); cam.position.z = 12;
+      var renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true }); renderer.setSize(window.innerWidth, window.innerHeight); renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+      document.getElementById('three-bg').appendChild(renderer.domElement);
+      var orbs = [], geo = new THREE.SphereGeometry(.07, 16, 16), mat = new THREE.MeshBasicMaterial({ color: 0xcc0000, transparent: true, opacity: .35 });
+      for (var i = 0; i < 35; i++) { var o = new THREE.Mesh(geo, mat); o.position.set((Math.random() - .5) * 22, (Math.random() - .5) * 14, (Math.random() - .5) * 6 - 3); o.userData = { sx: (Math.random() - .5) * .008, sy: (Math.random() - .5) * .006, sz: (Math.random() - .5) * .004 }; scene.add(o); orbs.push(o) }
+      var t = 0; (function a3() { t += .004; orbs.forEach(function (o) { o.position.x += o.userData.sx + Math.sin(t + o.position.y) * .004; o.position.y += o.userData.sy + Math.cos(t + o.position.x) * .004; o.position.z += o.userData.sz; if (Math.abs(o.position.x) > 11) o.position.x *= -.9; if (Math.abs(o.position.y) > 7) o.position.y *= -.9; if (Math.abs(o.position.z) > 6) o.position.z *= -.9 }); cam.position.x = Math.sin(t * .25) * .4; cam.position.y = Math.cos(t * .35) * .25; cam.lookAt(0, 0, 0); renderer.render(scene, cam); requestAnimationFrame(a3) })();
+      window.addEventListener('resize', function () { cam.aspect = window.innerWidth / window.innerHeight; cam.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight) });
+    })();
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PARTICLES.JS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    particlesJS('particles-bg', { particles: { number: { value: 65, density: { enable: true, value_area: 800 } }, color: { value: '#cc0000' }, shape: { type: 'circle' }, opacity: { value: .4, random: true, anim: { enable: true, speed: .4, opacity_min: .08, sync: false } }, size: { value: 2, random: true, anim: { enable: true, speed: .8, size_min: .4, sync: false } }, line_linked: { enable: true, distance: 130, color: '#cc0000', opacity: .1, width: 1 }, move: { enable: true, speed: .8, direction: 'none', random: true, straight: false, out_mode: 'out', bounce: false, attract: { enable: true, rotateX: 500, rotateY: 1000 } } }, interactivity: { detect_on: 'canvas', events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' }, resize: true }, modes: { grab: { distance: 160, line_linked: { opacity: .3 } }, push: { particles_nb: 4 } } }, retina_detect: true });
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• IMAGE SEQUENCE (AUTO-PLAY 5 IMAGES) â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    (function () {
+      var images = ['https://image.tmdb.org/t/p/w1280/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg', 'https://image.tmdb.org/t/p/w1280/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg', 'https://image.tmdb.org/t/p/w1280/tNlkKrypFs6QSUjFVQntFISoFv5.jpg', 'https://image.tmdb.org/t/p/w1280/gFRHLjysseRgbZmMUS3e2oNdFQK.jpg', 'https://image.tmdb.org/t/p/w1280/piuRhGiQBYWgW668eSNJ2ug5uAO.jpg'];
+      var container = document.getElementById('imgSeq'), frames = [], currentIdx = 0;
+      images.forEach(function (src, i) { var f = document.createElement('div'); f.className = 'seq-frame'; f.style.backgroundImage = 'url(' + src + ')'; container.insertBefore(f, container.firstChild); frames.push(f) });
+      frames[0].classList.add('active');
+      var seqTitle = document.getElementById('seqTitle'), seqSub = document.getElementById('seqSub');
+      var titles = ['The Crew Assembled', 'Red Revolution', 'The Mastermind', 'Inside the Royal Mint', 'Symbol of Resistance'];
+      seqTitle.textContent = titles[0]; seqSub.textContent = '';
+      setInterval(function () {
+        currentIdx = (currentIdx + 1) % images.length;
+        frames.forEach(function (f, i) { f.classList.toggle('active', i === currentIdx) });
+        seqTitle.textContent = titles[currentIdx];
+      }, 2400);
+    })();
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FLOATING OBJECTS (SCRUB) â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    (function () {
+      var mask = document.getElementById('dali-mask-float'), gold = document.getElementById('gold-bar-float');
+      ScrollTrigger.create({
+        trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: 1.5,
+        onUpdate: function (self) { var p = self.progress; if (mask) { mask.style.transform = 'translateY(' + (p * 300) + '%) rotate(' + (p * 200) + 'deg)'; mask.style.opacity = .08 + p * .06 } if (gold) { gold.style.transform = 'translateY(' + (p * 200) + '%) rotate(' + (-p * 150) + 'deg)'; gold.style.opacity = .06 + p * .06 } }
+      });
+    })();
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• GSAP SCRUB: HERO TEXT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    gsap.fromTo('#hero .hc', { opacity: .2, scale: .95 }, { opacity: 1, scale: 1, duration: 1.5, ease: 'power3.out' });
+    gsap.fromTo('#hero .si', { opacity: 0 }, { opacity: .6, scrollTrigger: { trigger: '#hero', start: 'top top', end: 'top+=200 top', scrub: 1 } });
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PARALLAX SCRUB â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    document.querySelectorAll('.about-grid .ab').forEach(function (card, i) {
+      gsap.fromTo(card, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: card, start: 'top bottom-=100', end: 'top center', scrub: .8, toggleActions: 'play none none reverse' } })
+    });
+    document.querySelectorAll('.cg .ch').forEach(function (card, i) {
+      gsap.fromTo(card, { y: 50, opacity: 0, scale: .92 }, { y: 0, opacity: 1, scale: 1, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: card, start: 'top bottom-=100', end: 'top center', scrub: .6, toggleActions: 'play none none reverse' } })
+    });
+    document.querySelectorAll('.tl').forEach(function (row, i) {
+      gsap.fromTo(row, { opacity: 0, x: i % 2 === 0 ? -30 : 30 }, { opacity: 1, x: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: row, start: 'top bottom-=80', end: 'top center', scrub: .8 } })
+    });
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• COUNTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    (function () {
+      var done = false; ScrollTrigger.create({
+        trigger: '#stats', start: 'top bottom-=100', onEnter: function () {
+          if (!done) {
+            done = true;
+            document.querySelectorAll('.stb .n').forEach(function (el) { var t = parseFloat(el.getAttribute('data-t')), ft = t % 1 !== 0, dur = 2200, st = null; function step(ts) { if (!st) st = ts; var p = Math.min((ts - st) / dur, 1); el.textContent = ft ? (p * t).toFixed(1) : Math.floor(p * t); if (p < 1) requestAnimationFrame(step); else el.textContent = t } requestAnimationFrame(step) })
+          }
+        }
+      });
+    })();
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SWIPER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    (function () {
+      var slides = document.querySelectorAll('#swW .slide'), idx = 0, total = slides.length; if (!total) return;
+      function spv() { if (window.innerWidth >= 1024) return 3; if (window.innerWidth >= 768) return 2; return 1 }
+      function go(n) { var s = spv(), max = total - s; if (n < 0) n = 0; if (n > max) n = max; idx = n; document.getElementById('swW').style.transform = 'translateX(-' + (idx * (100 / s)) + '%)'; document.getElementById('swW').style.transition = 'transform .5s ease' }
+      document.getElementById('pb').addEventListener('click', function () { go(idx - 1) }); document.getElementById('nb').addEventListener('click', function () { go(idx + 1) }); setInterval(function () { go(idx + 1) }, 4000);
+    })();
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• LIGHTBOX â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    var lb = document.getElementById('lb'), lbi = document.getElementById('lbi'); document.querySelectorAll('.gi2 img').forEach(function (img) { img.addEventListener('click', function () { lbi.src = img.src; lb.classList.add('show') }) }); lb.addEventListener('click', function (e) { if (e.target === lb || e.target.classList.contains('lbx')) lb.classList.remove('show') });
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CONTACT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    document.getElementById('cf2').addEventListener('submit', function (e) { e.preventDefault(); var m = document.getElementById('msg2'), n = this.querySelector('[name="name"]').value.trim(), em = this.querySelector('[name="email"]').value.trim(), ms = this.querySelector('[name="message"]').value.trim(); m.className = 'msg2'; if (!n || !em || !ms) { m.className = 'msg2 err'; m.textContent = 'All fields required.'; return } if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { m.className = 'msg2 err'; m.textContent = 'Invalid email.'; return } m.className = 'msg2 ok'; m.textContent = 'Message sent! The Professor will respond.'; this.reset() });
+
+    console.log('%cðŸ’° MONEY HEIST %c| La Casa de Papel %câ€” Premium Live',
+      'color:#cc0000;font-size:18px;font-weight:bold', 'color:#fff;font-size:13px', 'color:#888;font-size:10px');
+  </script>
+</body>
+
+</html>
